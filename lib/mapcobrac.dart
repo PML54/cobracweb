@@ -116,9 +116,15 @@ class _MapCobracState extends State<MapCobrac>
                       thisDepart(77),
                     ],
                   ),
+                  Row(
+                    children: <Widget>[
+                      thisDepart(58),
+                      thisDepart(21),
+                    ],
+                  ),
                 ],
               ),
-              Column(
+              /*   Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Row(
@@ -141,7 +147,7 @@ class _MapCobracState extends State<MapCobrac>
                     ],
                   ),
                 ],
-              ),
+              ),*/
             ],
           ),
         ),
@@ -152,7 +158,7 @@ class _MapCobracState extends State<MapCobrac>
 
   Padding thisDepart(int _thatone) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(1.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           primary: DepFrance[_thatone] ? Colors.teal : Colors.grey,

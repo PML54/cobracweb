@@ -134,8 +134,9 @@ class _ManagerPMLState extends State<ManagerPML> {
                   ),
                 ),
                 ElevatedButton(
-                    child: Text('Broc',
-                        style: TextStyle(color: colorBROC, fontSize: 10)),
+                    child: Text('Brocante', style: TextStyle(fontSize: 10)),
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(colorBROC)),
                     onPressed: () {
                       setState(() {
                         colorMAISON = colorKO;
@@ -146,8 +147,10 @@ class _ManagerPMLState extends State<ManagerPML> {
                       readBrocabrac();
                     }),
                 ElevatedButton(
-                    child: Text('Maison',
-                        style: TextStyle(color: colorMAISON, fontSize: 10)),
+                    child: Text('Maison', style: TextStyle(fontSize: 10)),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(colorMAISON)),
                     onPressed: () {
                       setState(() {
                         colorMAISON = colorOK;
@@ -320,8 +323,9 @@ class _ManagerPMLState extends State<ManagerPML> {
                   },
                 ),
                 ElevatedButton(
-                    child: Text('VVF',
-                        style: TextStyle(color: colorVVF, fontSize: 10)),
+                    child: Text('VVF', style: TextStyle(fontSize: 10)),
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(colorVVF)),
                     onPressed: () {
                       nbStepAsync = 0;
                       setState(() {
@@ -336,8 +340,9 @@ class _ManagerPMLState extends State<ManagerPML> {
                       readBrocabrac();
                     }),
                 ElevatedButton(
-                    child: Text('LARRIS',
-                        style: TextStyle(color: colorLAR, fontSize: 10)),
+                    child: Text('LARRIS', style: TextStyle(fontSize: 10)),
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(colorLAR)),
                     onPressed: () {
                       nbStepAsync = 0;
                       setState(() {
@@ -352,8 +357,9 @@ class _ManagerPMLState extends State<ManagerPML> {
                       readBrocabrac();
                     }),
                 ElevatedButton(
-                    child: Text('MORVAN',
-                        style: TextStyle(color: colorMORV, fontSize: 10)),
+                    child: Text('MORVAN', style: TextStyle(fontSize: 10)),
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(colorMORV)),
                     onPressed: () {
                       nbStepAsync = 0;
                       setState(() {
